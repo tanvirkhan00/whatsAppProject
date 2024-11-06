@@ -10,7 +10,11 @@ export default {
       'md': '768px',
       'lg': '1024px',
     },
-    extend: {},
+    extend: {
+      backgroundImage:{
+        "bgChat" :"url('/src/assets/bgImage.png')"
+      }
+    },
       container: {
         center:true,
         padding: {

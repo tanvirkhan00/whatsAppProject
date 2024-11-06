@@ -20,6 +20,7 @@ import image6 from "/src/assets/Image6.png"
 import image7 from "/src/assets/Image7.png"
 import image8 from "/src/assets/Image8.png"
 import image9 from "/src/assets/Image9.png"
+import { Link } from 'react-router-dom';
 
 
 const Chats = () => {
@@ -64,21 +65,23 @@ const Chats = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='flex items-center gap-3'>
-                                <div className='basis-[15%]'>
-                                    <img src={image3} alt="Image" />
-                                </div>
-                                <div className='basis-[85%] border-b-2 pb-1'>
-                                    <div className='flex items-center  justify-between'>
-                                        <h2 className='text-[16px] font-semibold'>Elisa das Zoho</h2>
-                                        <h4 className='text-[14px] text-slate-500'>Yesterday</h4>
+                            <Link to="/profile">
+                                <div className='flex items-center gap-3'>
+                                    <div className='basis-[15%]'>
+                                        <img src={image3} alt="Image" />
                                     </div>
-                                    <div className='flex gap-1   items-center'>
-                                        <span className='text-green-500'><FaMicrophone /></span>
-                                        <p className='text-[14px] text-slate-400'>0:14</p>
+                                    <div className='basis-[85%] border-b-2 pb-1'>
+                                        <div className='flex items-center  justify-between'>
+                                            <h2 className='text-[16px] font-semibold'>Elisa das Zoho</h2>
+                                            <h4 className='text-[14px] text-slate-500'>Yesterday</h4>
+                                        </div>
+                                        <div className='flex gap-1   items-center'>
+                                            <span className='text-green-500'><FaMicrophone /></span>
+                                            <p className='text-[14px] text-slate-400'>0:14</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                             <div className='flex items-center gap-3'>
                                 <div className='basis-[15%]'>
                                     <img src={image4} alt="Image" />
