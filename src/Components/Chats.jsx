@@ -52,7 +52,7 @@ const Chats = () => {
                             </div>
                             <div className='flex items-center gap-3'>
                                 <div className='basis-[15%]'>
-                                    <img src={image2} alt="Image" />
+                                    <Link to="/contact"><img src={image2} alt="Image" /></Link>
                                 </div>
                                 <div className='basis-[85%] border-b-2 pb-1'>
                                     <div className='flex items-center  justify-between'>
